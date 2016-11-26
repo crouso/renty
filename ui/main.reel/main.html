@@ -16,6 +16,16 @@
                 "draggable": "true"
             }
         },
+        "condition": {
+            "prototype": "montage/ui/condition.reel",
+            "properties": {
+                "element": {"#": "condition"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "removalStrategy": "hide"
+            }
+        },
         "image": {
             "prototype": "digit/ui/image.reel",
             "properties": {
@@ -68,6 +78,7 @@
         <input data-montage-id="textField" type="text">
         <input data-montage-id="textField2" type="text">
         <input data-montage-id="textField3" type="text">
+        <div data-montage-id="condition"></div>
     </div>
 </body>
 </html>
