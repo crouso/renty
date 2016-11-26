@@ -10,17 +10,26 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"}
+                "element": {"#": "main"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         },
         "textField": {
-            "prototype": "digit/ui/text-field.reel",
+            "prototype": "montage/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textField"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "placeholderValue": "Text"
+                "autofocus": "yes",
+                "classList": {
+                    "type": "set",
+                    "values": {
+                        "0": ""
+                    }
+                },
+                "disabled": false,
+                "enabled": true,
+                "value": "0"
             }
         }
     }
