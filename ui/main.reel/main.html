@@ -16,20 +16,20 @@
                 "draggable": "true"
             }
         },
-        "textField": {
-            "prototype": "montage/ui/text-field.reel",
+        "image": {
+            "prototype": "digit/ui/image.reel",
             "properties": {
-                "element": {"#": "textField"},
-                "autofocus": "yes",
-                "classList": {
-                    "type": "set",
-                    "values": {
-                        "0": ""
-                    }
-                },
-                "disabled": false,
-                "enabled": true,
-                "value": ""
+                "element": {"#": "image"},
+                "crossOrigin": null
+            }
+        },
+        "listItem": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "listItem"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         }
     }
@@ -38,6 +38,8 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input data-montage-id="textField" type="text">
+        <img data-montage-id="image">
+        <li data-montage-id="listItem"></li>
     </div>
 </body>
 </html>
