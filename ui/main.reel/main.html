@@ -20,13 +20,16 @@
             "prototype": "digit/ui/image.reel",
             "properties": {
                 "element": {"#": "image"},
-                "crossOrigin": null
+                "contenteditable": "true",
+                "crossOrigin": null,
+                "dir": "ltr",
+                "draggable": "true",
+                "src": "https://devconit.com/images/logo.png"
             }
         },
         "listItem": {
             "prototype": "digit/ui/list-item.reel",
             "properties": {
-                "element": {"#": "listItem"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true"
@@ -37,9 +40,8 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <input data-montage-id="textField" type="text">
         <img data-montage-id="image">
-        <li data-montage-id="listItem"></li>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
